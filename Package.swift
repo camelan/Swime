@@ -1,18 +1,17 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.7.1
 import PackageDescription
 
 let package = Package(
   name: "Swime",
   platforms: [
-    .iOS(.v9),
-    .macOS(.v10_10)
+    .iOS(.v14),
   ],
   products: [
     .library(name: "Swime", targets: ["Swime"])
   ],
   dependencies: [
-    .package(url: "https://github.com/Quick/Quick", from: "1.3.4"),
-    .package(url: "https://github.com/Quick/Nimble", from: "7.3.3")
+    .package(url: "https://github.com/Quick/Quick", from: "6.1.0"),
+    .package(url: "https://github.com/Quick/Nimble", from: "12.0.0")
   ],
   targets: [
     .target(
